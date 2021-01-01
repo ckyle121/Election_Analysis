@@ -5,6 +5,16 @@
 import csv
 import os
 
+# Open the election results and read the file.
+with open(file_to_load) as election_data:
+    # Print the file object.
+     print(election_data)
+     # Read the file object with the reader function.
+     file_reader = csv.reader(election_data)
+     # Read and print the header row.
+     headers = next(file_reader)
+     print(headers)
+     
 # Add a variable to load a file from a path.
 file_to_load = os.path.join("", "Resources", "election_results.csv")
 # Add a variable to save the file to a path.
@@ -47,7 +57,7 @@ with open(file_to_load) as election_data:
         candidate_name = row[2]
 
         # 3: Extract the county name from each row.
-
+        county_name = row[1]
 
         # If the candidate does not match any existing candidate add it to
         # the candidate list
@@ -64,17 +74,16 @@ with open(file_to_load) as election_data:
 
         # 4a: Write an if statement that checks that the
         # county does not match any existing county in the county list.
-
+        if county_name not in county_list:
 
             # 4b: Add the existing county to the list of counties.
-
+            county_list.append(county_name)
 
             # 4c: Begin tracking the county's vote count.
-
+            county_votes[county_name] = 0
 
         # 5: Add a vote to that county's vote count.
-
-
+        county_votes[county_name] += 1
 
 # Save the results to our text file.
 with open(file_to_save, "w") as txt_file:
@@ -91,13 +100,16 @@ with open(file_to_save, "w") as txt_file:
     txt_file.write(election_results)
 
     # 6a: Write a for loop to get the county from the county dictionary.
+    for county_list in county_votes
 
         # 6b: Retrieve the county vote count.
+        votes = county_votes[county_list]
 
         # 6c: Calculate the percentage of votes for the county.
-
+        vote_percentage = float(votes) / float(total_votes) * 100
 
          # 6d: Print the county results to the terminal.
+            print(f"{county_list}:{vote_percentage:.2f")
 
          # 6e: Save the county votes to a text file.
 
