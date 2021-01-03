@@ -9,6 +9,9 @@ The election commission is looking to generate code that provides a vote count r
 
 ## Election Audit Results: 
 The image below is the results for the election outcomes:
+
+
+
 ![Election_Analysis_Results](https://user-images.githubusercontent.com/75647359/103489883-64409f80-4ddd-11eb-97f9-cfd8995765fb.png)
 
 
