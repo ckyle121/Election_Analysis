@@ -5,9 +5,9 @@ Total Votes: 369,711
 -------------------------
 
 County Votes:
-['Jefferson', 'Denver', 'Arapahoe']:10.51% (38855)
-['Jefferson', 'Denver', 'Arapahoe']:82.78% (306055)
-['Jefferson', 'Denver', 'Arapahoe']:6.71% (24801)
+Jefferson:10.51% (38855)
+Denver:82.78% (306055)
+Arapahoe:6.71% (24801)
 The largest county is Denver
 -------------------------
 Charles Casper Stockham: recieved 23.05% of the vote
