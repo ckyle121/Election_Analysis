@@ -122,7 +122,7 @@ with open(file_to_save, "w") as txt_file:
         # Retrieve vote count and percentage
         votes = candidate_votes.get(candidate_name)
         vote_percentage = float(votes) / float(total_votes) * 100
-        candidate_results = (f"{candidate_name}: recieved {vote_percentage:.2f}% of the vote).")
+        candidate_results = (f"{candidate_name}: recieved {vote_percentage:.2f}% of the vote")
 
         # Print each candidate's voter count and percentage to the
         # terminal.
